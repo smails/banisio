@@ -1,0 +1,82 @@
+mixin wine(vars)
+  +b.product
+    +e.nav
+      +e.IMG.prev(src='/icons/left-arrow.svg' alt='')
+      +e.nav-content
+        +e.IMG.i(src='/images/wines-1.png' alt='')
+        +e.P.nav-title Banisio Crianza
+        +e.P.nav-sign Tinto Fino
+    +e.content
+      +e.picture
+        +e.IMG.pic(src='/images/wines-3.png' alt='')
+      +e.info
+        +e.H1.title Banisio Reserva
+          span Tempranillo
+        +e.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse efficitur leo mauris, eget commodo elit accumsan non. Donec dapibus varius leo ornare sagittis. Maecenas a efficitur neque. Duis nec nisi sit amet massa lacinia lacinia eu tempor ante. Praesent et congue magna. Curabitur feugiat elementum velit, et porta leo faucibus nec. Duis et odio ut diam varius congue et vel neque. Nulla vitae volutpat turpis, at ullamcorper nisi. Vestibulum eu aliquam urna. Fusce enim justo, accumsan in mi a, rhoncus feugiat arcu. Etiam ac erat ut quam gravida egestas. 
+        +e.UL.list
+          +e.LI.item
+            +e.P.name Vintage
+            +e.P.val 2016
+          +e.LI.item
+            +e.P.name Regions
+            +e.P.val Rioja D.O.Ca
+          +e.LI.item
+            +e.P.name Varietals
+            +e.P.val Tempranillo  
+          +e.LI.item
+            +e.P.name Style
+            +e.P.val Dry, Medium, bodied
+          +e.LI.item
+            +e.P.name Tasting Notes
+            +e.P.val Praesent condimentum dolor.
+    +e.nav
+      +e.IMG.next(src='/icons/right-arrow.svg' alt='')
+      +e.nav-content
+        +e.IMG.i(src='/images/wines-2.png' alt='')
+        +e.P.nav-title Banisio Verdejo
+        +e.P.nav-sign Verdejo
+  +b.picture
+  +b.about-banner
+    +e.IMG.icon(src='/icons/about-icon.svg' alt='')
+    +e.P.sign The palate is profound and very intense. Very long, harmonious aftertaste. A superb wine.
+    +e.quote — Jose Peñin
+  +b.about
+    +e.item_color
+      +e.picture
+        +e.IMG.pic(src='/images/vnt-4.jpg' alt='')
+      +e.content
+        +e.P.title Food Pairing
+        +e.P.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut facilisis turpis. Mauris neque orci, consectetur quis consectetur eu, accumsan quis velit. Duis ut consectetur ex.
+    +e.item_reverse._color
+      +e.picture
+        +e.IMG.pic(src='/images/vnt-5.jpg' alt='')
+      +e.content
+        +e.P.title From the Winemaker
+        +e.P.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut facilisis turpis. Mauris neque orci, consectetur quis consectetur eu, accumsan quis velit. Duis ut consectetur ex.
+  +b.similar
+    +e.H2.title.text-center You may also like
+    +e.list
+      +e.item
+        +e.picture
+          +e.IMG.i(src='/images/wines-1.png' alt='')
+        +e.info
+          +e.P.sign SOMETHING SIMILAR
+          +e.P.caption Crianza
+          +e.P.subtitle Ribera del Duero
+          +b.A.more(href="#") LEARN MORE
+            +e.SVG.i(height='512' viewBox='0 0 24 24' width='512' xmlns='http://www.w3.org/2000/svg')
+              path(d='M15.5 12.5H.5a.5.5 0 010-1h15a.5.5 0 010 1z')
+              path(d='M11.5 16.5a.5.5 0 01-.354-.853L14.793 12l-3.646-3.646a.5.5 0 01.707-.707l4 4a.5.5 0 010 .707l-4 4a.502.502 0 01-.354.146z')
+              path(d='M12 23a11.015 11.015 0 01-10.372-7.333.5.5 0 01.943-.333A10.013 10.013 0 0012 22c5.514 0 10-4.486 10-10S17.514 2 12 2a10.01 10.01 0 00-9.428 6.667.5.5 0 01-.943-.333A11.012 11.012 0 0112 1c6.065 0 11 4.935 11 11s-4.935 11-11 11z')
+      +e.item
+        +e.picture_gray
+          +e.IMG.i(src='/images/wines-2.png' alt='')
+        +e.info
+          +e.P.sign SOMETHING DIFFERENT
+          +e.P.caption Sauvignon Blanc
+          +e.P.subtitle Rueda
+          +b.A.more(href="#") LEARN MORE
+            +e.SVG.i(height='512' viewBox='0 0 24 24' width='512' xmlns='http://www.w3.org/2000/svg')
+              path(d='M15.5 12.5H.5a.5.5 0 010-1h15a.5.5 0 010 1z')
+              path(d='M11.5 16.5a.5.5 0 01-.354-.853L14.793 12l-3.646-3.646a.5.5 0 01.707-.707l4 4a.5.5 0 010 .707l-4 4a.502.502 0 01-.354.146z')
+              path(d='M12 23a11.015 11.015 0 01-10.372-7.333.5.5 0 01.943-.333A10.013 10.013 0 0012 22c5.514 0 10-4.486 10-10S17.514 2 12 2a10.01 10.01 0 00-9.428 6.667.5.5 0 01-.943-.333A11.012 11.012 0 0112 1c6.065 0 11 4.935 11 11s-4.935 11-11 11z')

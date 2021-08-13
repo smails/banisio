@@ -1,0 +1,190 @@
+.product
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  padding: 20rem 0 10rem
+  background-color: #f8f7f6
+  box-sizing: border-box
+  +screen('max', 575)
+    padding-top: 60px
+  &__nav
+    position: relative
+    text-align: center
+    font-weight: 400
+    cursor: pointer
+    margin-top: 10%
+    +screen('max', 1200)
+      display: none
+    &:hover
+      .product__nav-content
+        opacity: 1
+        transition-delay: .2s
+      .product__next
+        right: -20px
+      .product__prev
+        left: -20px
+  &__nav-content
+    transition: .2s ease-in
+    opacity: 0
+    display: block
+  &__nav-title
+    +fs(16px)
+    color: $c2
+    font-family: $font
+  &__nav-sign
+    +fs(14px)
+  &__prev
+    position: absolute
+    left: 80%
+    width: 16px
+    top: 50%
+    transform: translateY(-50%)
+    transition: .3s ease
+  &__next
+    position: absolute
+    right: 80%
+    width: 16px
+    top: 50%
+    transform: translateY(-50%)
+    transition: .3s ease
+  &__i
+    height: 150px
+    object-fit: contain
+  &__picture
+    width: 150px
+    flex-shrink: 0
+    height: 610px
+    margin-right: 10%
+    +screen('max', 1023)
+      margin-right: 5rem
+    +screen('max', 575)
+      width: 100%
+      height: 65vh
+      display: flex
+      justify-content: center
+      padding-top: 50px
+      background-color: #e3e2dd
+      overflow: hidden
+  &__pic
+    object-fit: contain
+    height: 100%
+    width: 100%
+  &__content
+    display: flex
+    align-items: flex-start
+    max-width: 780px
+    margin: 0 10rem
+    flex-grow: 1
+    +screen('max', 1200)
+      margin: 0
+    +screen('max', 1023)
+      padding: 0 2rem
+      box-sizing: border-box
+    +screen('max', 575)
+      display: block
+      padding: 0
+  &__title
+    +fs(40px)
+    color: $c2
+    line-height: 1.25
+    margin-bottom: 2.5rem
+    span
+      color: $c1
+      display: block
+  &__info
+    +screen('max', 575)
+      padding: 4rem
+      box-sizing: border-box
+  &__text
+    +fs(16px)
+  &__list
+    margin-top: 6rem
+  &__item
+    display: flex
+    border-bottom: 1px solid rgba($c2, .5)
+    padding: 1.2rem 0
+    margin-bottom: 0
+    &:first-of-type
+      padding-top: 0
+    &:last-of-type
+      border-bottom: 0
+      padding-bottom: 0
+  &__name
+    width: 120px
+    flex-shrink: 0
+    margin-right: 1rem
+    color: $c2
+    +fs(15px)
+    letter-spacing: 0.33px
+    font-weight: 300
+  &__val
+    +fs(15px)
+
+.picture
+  width: 100%
+  height: 600px
+  background-image: url(/images/banner-wine-black.jpg)
+  background-repeat: no-repeat
+  background-position: center
+  background-attachment: fixed
+  background-size: cover
+  +screen('max', 575)
+    height: 300px
+.similar
+  margin-top: 4rem
+  margin-bottom: 8rem
+  &__title
+    margin-bottom: 4rem
+  &__list
+    display: flex
+    +screen('max', 575)
+      display: block
+  &__item
+    width: 50%
+    text-align: center
+    +screen('max', 575)
+      width: 100%
+      margin-bottom: 10rem
+  &__picture
+    width: 100%
+    height: 450px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #f8f7f6
+    padding: 2rem
+    box-sizing: border-box
+    +screen('max', 575)
+      height: 65vh
+      padding-top: 50px
+      padding-bottom: 0
+      overflow: hidden
+    &_gray
+      background-color: #e3e2dd
+  &__i
+    height: 100%
+  &__sign
+    margin-top: 2rem
+    +fs(13px)
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 1.3px
+  &__caption
+    +fs(22px)
+    font-weight: 400
+    margin-top: 1.5rem
+    letter-spacing: 0.55px
+    font-family: $font
+    +screen('max', 575)
+      margin-top: 5rem
+  &__subtitle
+    +fs(18px)
+    letter-spacing: 0.18px
+    margin-top: 1rem
+    font-weight: 400
+    margin-bottom: 1.5rem
+    +screen('max', 575)
+      margin-bottom: 5rem
+  &__info
+    +screen('max', 575)
+      padding: 1.5rem 0 4rem

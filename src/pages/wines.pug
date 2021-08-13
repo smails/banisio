@@ -1,0 +1,14 @@
+include ../static/pug/global
+<!DOCTYPE html>
+html
+  +head('WINES')
+  body
+    +header()
+    +banner('wines', '', 'D.O.Ca. Rioja')
+    +wines('1')
+    +banner('wines-1', '', 'D.O. Rueda')
+    +wines('2')
+    +banner('wines-2', '', 'D.O. Ribera del Duero')
+    +wines('3')
+    +footer()
+    include ../static/pug/_scripts

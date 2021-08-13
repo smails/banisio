@@ -1,0 +1,188 @@
+.header
+  padding: 2rem 0
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 99
+  background: #fff
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__menu
+    display: block
+    height: 20px
+    width: 30px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 3rem
+    +screen('min', 1023)
+      display: none
+    .burger
+      display: block
+      position: relative
+      height: 2px
+      transition: .4s
+      width: 20px
+      background: #000
+      position: relative
+      left: 0px
+      z-index: 99
+      border-radius: 5px
+      &::after,
+      &::before
+        content: ""
+        display: block
+        position: absolute
+        background: #000
+        width: 28px
+        height: 2px
+        transition: .4s
+        border-radius: 5px
+      &::after
+        top: 8px
+      &::before
+        top: -8px
+  &__logo
+    width: 90px
+    display: block
+    margin-right: 10%
+    +screen('max', 575)
+      margin-right: 0
+  &__i
+    width: 100%
+    vertical-align: middle
+  &__left
+    display: flex
+    align-items: center
+    flex-shrink: 0
+    +screen('max', 575)
+      width: 60%
+      justify-content: space-between
+  &__nav
+    display: flex
+    align-items: center
+    +screen('max', 1023)
+      display: none
+  &__item
+    margin-bottom: 0
+    margin-right: 3rem
+    flex-shrink: 0
+  &__link
+    +fs(17px)
+    color: #000000
+    transition: .5s ease
+    &:hover
+      color: #8c734b
+  &__right
+    display: flex
+    justify-content: flex-end
+    align-items: center
+  &__call
+    margin-left: 2rem
+    color: #000
+    +fs(17px)
+    transition: .5s ease
+    flex-shrink: 0
+    line-height: 1
+    +screen('max', 575)
+      display: none
+    &:hover
+      color: #8c734b
+      path
+        fill: #8c734b
+  &__call-icon
+    width: 20px
+    height: 20px
+    vertical-align: middle
+    object-fit: contain
+    margin-right: 1rem
+    margin-top: -0.2rem
+    path
+      transition: .5s ease
+.lang
+  display: flex
+  margin-left: 7%
+  &__link
+    padding-left: .5rem
+    transition: .5s ease
+    color: #000
+    font-weight: 400
+    line-height: 1
+    text-transform: uppercase
+    +fs(15px)
+    &.active
+      color: $c2
+    &:hover
+      color: rgba($c2, .8)
+
+.nav
+  width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  height: 100vh
+  background: #fff
+  z-index: 99
+  display: none
+  &__close
+    width: 40px
+    height: 40px
+    position: absolute
+    top: 5%
+    right: 10%
+    svg
+      width: 100%
+      height: 100%
+    path
+      fill: $c2
+      transition: .5s ease
+    &:hover
+      path
+        fill: $c3
+  &__content
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    +screen('max', 575)
+      flex-wrap: wrap
+      box-sizing: border-box
+      padding-left: 3rem
+      flex-flow: column
+      align-items: start
+  &__info
+    margin-left: 10%
+    max-width: 230px
+    +screen('max', 575)
+      margin-left: 0
+      margin-top: 3rem
+  &__link
+    +fs(42px)
+    font-family: $font
+    font-weight: 400
+    letter-spacing: 1.05px
+  &__title
+    text-transform: uppercase
+    +fs(14px)
+    color: $c2
+    font-weight: 400
+    margin-bottom: 2rem
+    letter-spacing: 1.4px
+  &__box
+    +fs(16px)
+    letter-spacing: 0.15px
+    margin-bottom: 3rem
+    a
+      display: block
+      transition: .5s ease
+      &:hover
+        color: $c2
+  .social
+    justify-content: flex-start
+    &__link
+      &:first-of-type
+        margin-left: 0

@@ -1,0 +1,33 @@
+.text-box
+  padding: 11.5rem
+  box-sizing: border-box
+  +screen('max', 1200)
+    padding: 11.5rem 0
+  +screen('max', 575)
+    padding: 7rem 0
+  &__inner
+    display: flex
+    align-items: center
+    justify-content: space-between
+    +screen('max', 1023)
+      align-items: flex-start
+    +screen('max', 575)
+      display: block
+  &__title
+    transition: .5s ease .5s
+    opacity: 0
+    transform: translate(-15px, -15px)
+  &__content
+    width: 50%
+    max-width: 610px
+    font-weight: 300
+    transition: .5s ease .8s
+    opacity: 0
+    transform: translate(-15px, 15px)
+    +screen('max', 575)
+      width: 100%
+      margin-top: 3rem
+  &.open
+    .text-box__title, .text-box__content
+      opacity: 1
+      transform: none

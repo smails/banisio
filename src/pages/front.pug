@@ -1,0 +1,14 @@
+include ../static/pug/global
+<!DOCTYPE html>
+html
+  +head('HOME')
+  body
+    +header('index')
+    +banner('index')
+    +text('In wine we believe')
+    +wines('slider')
+    +text('Unique flavours')
+    +banner('vantage', 'button')
+    +review()
+    +footer()
+    include ../static/pug/_scripts

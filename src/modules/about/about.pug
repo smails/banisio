@@ -1,0 +1,63 @@
+mixin about(vars)
+  +b.about-nav
+    +e.inner.inner
+      +e.item
+        +e.IMG.pic(src='/images/wines-1.jpg' alt='')
+        +e.P.title Banisio Crianza 
+          span 2018
+        +e.P.subtitle Lorem ipsum dolor sit amet, consectetur.
+        +b.A.more(href="#") DISCOVER WINES
+          +e.SVG.i(height='512' viewBox='0 0 24 24' width='512' xmlns='http://www.w3.org/2000/svg')
+            path(d='M15.5 12.5H.5a.5.5 0 010-1h15a.5.5 0 010 1z')
+            path(d='M11.5 16.5a.5.5 0 01-.354-.853L14.793 12l-3.646-3.646a.5.5 0 01.707-.707l4 4a.5.5 0 010 .707l-4 4a.502.502 0 01-.354.146z')
+            path(d='M12 23a11.015 11.015 0 01-10.372-7.333.5.5 0 01.943-.333A10.013 10.013 0 0012 22c5.514 0 10-4.486 10-10S17.514 2 12 2a10.01 10.01 0 00-9.428 6.667.5.5 0 01-.943-.333A11.012 11.012 0 0112 1c6.065 0 11 4.935 11 11s-4.935 11-11 11z')
+      +e.item
+        +e.IMG.pic(src='/images/wines-2.jpg' alt='')
+        +e.P.title Banisio Red 
+          span 2020
+        +e.P.subtitle Lorem ipsum dolor sit amet, consectetur.
+        +b.A.more(href="#") DISCOVER WINES
+          +e.SVG.i(height='512' viewBox='0 0 24 24' width='512' xmlns='http://www.w3.org/2000/svg')
+            path(d='M15.5 12.5H.5a.5.5 0 010-1h15a.5.5 0 010 1z')
+            path(d='M11.5 16.5a.5.5 0 01-.354-.853L14.793 12l-3.646-3.646a.5.5 0 01.707-.707l4 4a.5.5 0 010 .707l-4 4a.502.502 0 01-.354.146z')
+            path(d='M12 23a11.015 11.015 0 01-10.372-7.333.5.5 0 01.943-.333A10.013 10.013 0 0012 22c5.514 0 10-4.486 10-10S17.514 2 12 2a10.01 10.01 0 00-9.428 6.667.5.5 0 01-.943-.333A11.012 11.012 0 0112 1c6.065 0 11 4.935 11 11s-4.935 11-11 11z')
+      +e.item
+        +e.IMG.pic(src='/images/wines-3.jpg' alt='')
+        +e.P.title Banisio Reserva 
+          span 2016
+        +e.P.subtitle Lorem ipsum dolor sit amet, consectetur.
+        +b.A.more(href="#") DISCOVER WINES
+          +e.SVG.i(height='512' viewBox='0 0 24 24' width='512' xmlns='http://www.w3.org/2000/svg')
+            path(d='M15.5 12.5H.5a.5.5 0 010-1h15a.5.5 0 010 1z')
+            path(d='M11.5 16.5a.5.5 0 01-.354-.853L14.793 12l-3.646-3.646a.5.5 0 01.707-.707l4 4a.5.5 0 010 .707l-4 4a.502.502 0 01-.354.146z')
+            path(d='M12 23a11.015 11.015 0 01-10.372-7.333.5.5 0 01.943-.333A10.013 10.013 0 0012 22c5.514 0 10-4.486 10-10S17.514 2 12 2a10.01 10.01 0 00-9.428 6.667.5.5 0 01-.943-.333A11.012 11.012 0 0112 1c6.065 0 11 4.935 11 11s-4.935 11-11 11z')
+  +b.about
+    +e.item
+      +e.slider
+        .swiper-container
+          .swiper-wrapper
+            +e.IMG.pic.swiper-slide(src='/images/vnt-1.jpg' alt='')
+      +e.content
+        +e.P.text Con una gran orientación al sector vitivinícola, nacemos con la convicción de que con Banisio comprobará usted, cómo nacen los vinos, cuál es la mejor expresión de su terruño, y como es la historia aromática que cada uno de ellos, tiene que contarnos. Allí donde hay algo que celebrar, el vino tiene un papel importante. Así ha sido durante toda la historia y esa es nuestra inspiración. Por eso nace Banisio, una marca única que es la suma de dos tradiciones mitológicas. Al dios del vino, los romanos lo llamaban Baco. Los griegos, Dionisio. Nosotros unimos los dos nombres para conseguir un vino de culto.
+    +e.item_reverse
+      +e.slider
+        .swiper-container
+          .swiper-wrapper
+            +e.IMG.pic.swiper-slide(src='/images/vnt-2.jpg' alt='')
+            +e.IMG.pic.swiper-slide(src='/images/vnt-3.jpg' alt='')
+            +e.IMG.pic.swiper-slide(src='/images/vnt-1.jpg' alt='')
+      +e.content
+        +e.P.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut facilisis turpis. Mauris neque orci, consectetur quis consectetur eu, accumsan quis velit. Duis ut consectetur ex.
+    +e.item
+      +e.slider
+        .swiper-container
+          .swiper-wrapper
+            +e.IMG.pic.swiper-slide(src='/images/vnt-3.jpg' alt='')
+            +e.IMG.pic.swiper-slide(src='/images/vnt-2.jpg' alt='')
+            +e.IMG.pic.swiper-slide(src='/images/vnt-1.jpg' alt='')
+      +e.content
+        +e.P.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut facilisis turpis. Mauris neque orci, consectetur quis consectetur eu, accumsan quis velit. Duis ut consectetur ex.
+  +b.about-banner
+    +e.IMG.icon(src='/icons/about-icon.svg' alt='')
+    +e.P.sign The palate is profound and very intense. Very long, harmonious aftertaste. A superb wine.
+    +e.IMG.pic(src='/images/footer-1.jpg' alt='')

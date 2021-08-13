@@ -1,0 +1,192 @@
+html
+  scrollbar-color: $c1 #ffffff
+  scrollbar-width: thin
+  font-size: 10px
+  +screen('max', 575)
+    font-size: 5px
+body
+  font-size: 16px
+  font-weight: 300
+  line-height: 1.5
+  font-family: $font-family
+  color: #000
+  scroll-behavior: smooth
+  +screen('max', 575)
+    font-size: 14px
+  &::-webkit-scrollbar
+    width: 5px
+    height: 3px
+    transition: .05s ease
+  &::-webkit-scrollbar-track
+    background-color: $c1
+  &::-webkit-scrollbar-track-piece
+    background-color: #ffffff
+  &::-webkit-scrollbar-thumb
+    height: 50px
+    background-color: $c1
+    border-radius: 3px
+  &::-webkit-scrollbar-corner
+    background-color: $c1
+  &::-webkit-resizer
+    background-color: $c1
+.inner
+  max-width: 1300px
+  width: 100%
+  margin: 0 auto
+  box-sizing: border-box
+  padding: 0 4rem
+
+.more
+  +fs(15px)
+  color: $c2
+  font-weight: 500
+  letter-spacing: 0.7px
+  font-family: $font
+  display: inline-flex
+  align-items: center
+  text-transform: uppercase
+  line-height: 1
+  margin-top: 1.5rem
+  transition: .5s ease
+  &__i
+    width: 25px
+    height: 25px
+    margin-left: 1rem
+    transition: .5s ease
+    path
+      fill: $c2
+      transition: .5s ease
+  &:hover
+    color: $c3
+    svg
+      transform: translateX(10px)
+    path
+      fill: $c3
+  &_white
+    color: #fff
+    path
+      fill: #fff
+    &:hover
+      color: $c2
+      path
+        fill: $c2
+
+.swiper-button-next, .swiper-button-prev
+  width: 16px
+  height: 30px
+  transition: .5s ease
+  +screen('max', 1200)
+    display: none
+.swiper-button-next
+  background-image: url(../icons/right-arrow.svg)
+  &:hover
+    transform: translateX(10px)
+.swiper-button-prev
+  background-image: url(../icons/left-arrow.svg)
+  &:hover
+    transform: translateX(-10px)
+
+.social
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-top: 3rem
+  &__link
+    width: 45px
+    height: 45px
+    display: block
+    margin: 0 1.2rem
+    &:hover
+      .bg
+        fill: $c2
+  &__i
+    width: 100%
+    height: 100%
+    .bg
+      fill: $c3
+      transition: .5s ease
+
+.map
+  margin-top: 10rem
+  height: 520px
+  +screen('max', 575)
+    margin-top: 65px
+    height: 300px
+
+.contacts
+  margin: 7rem 0
+  text-align: center
+  &__info
+    display: inline-block
+    max-width: 290px
+  &__title
+    margin-bottom: 3rem
+  &__box
+    +fs(15px)
+    letter-spacing: 0.15px
+    margin-bottom: 3rem
+    a
+      display: block
+      transition: .5s ease
+      &:hover
+        color: $c2
+
+.err
+  margin-top: 13rem
+  text-align: center
+  &__sign
+    font-family: $font
+    +fs(50px)
+    font-weight: 400
+    margin-bottom: 4rem
+  &__title
+    +fs(70px)
+    font-weight: 300
+    margin-bottom: 2rem
+    font-family: $font
+    span
+      font-family: $font-family
+  & + .wine-list
+    padding-bottom: 10rem
+
+.modal-older
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 99
+  display: none
+  background-image: url(../images/banner-index.jpg)
+  &__container
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 96%
+    max-width: 400px
+    border-radius: 8px
+    background-color: #ffffff
+    text-align: center
+    transform: translate(-50%, -50%)
+    padding-bottom: 2.5rem
+  &__picture
+    width: 90px
+    height: 90px
+    background-color: #ffffff
+    margin-top: -45px
+    display: inline-block
+    padding: 10px
+    box-sizing: border-box
+    border-radius: 100%
+  &__title
+    +fs(22px)
+    font-weight: 400
+    margin-top: 2rem
+    font-family: $font
+  &__subtitle
+    +fs(15px)
+    margin-top: 1.5rem
+    font-weight: 300
+    margin-bottom: 1rem
+  .more
+    margin-right: 1rem

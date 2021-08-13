@@ -1,0 +1,138 @@
+.about-nav
+  padding: 7rem 0
+  &__inner
+    display: flex
+    justify-content: space-between
+    max-width: 1075px
+    +screen('max', 1023)
+      flex-wrap: wrap
+      justify-content: space-around
+    +screen('max', 575)
+      display: block
+  &__item
+    width: 32%
+    max-width: 345px
+    text-align: center
+    +screen('max', 1023)
+      width: 48%
+      margin-bottom: 2rem
+    +screen('max', 575)
+      width: 100%
+      margin-bottom: 3rem
+      max-width: 100%
+  &__pic
+    width: 100%
+    vertical-align: middle
+  &__title
+    +fs(22px)
+    font-weight: 400
+    font-family: $font
+    letter-spacing: 0.55px
+    margin-top: 3rem
+  &__subtitle
+    +fs(16px)
+    letter-spacing: 0.16px
+
+.about
+  &__item
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 70vh
+    +screen('max', 575)
+      display: block
+    &_reverse
+      flex-flow: row-reverse
+    &_color
+      background: #c3b58d
+      border-bottom: 1px solid #fff
+      height: auto
+      +screen('max', 575)
+        height: auto
+      .about__title
+        color: #fff
+  &__picture
+    width: 50%
+    height: 530px
+    overflow: hidden
+    flex-shrink: 0
+    +screen('max', 575)
+      height: 300px
+      width: 100%
+  &__slider
+    width: 50%
+    height: 100%
+    overflow: hidden
+    flex-shrink: 0
+    +screen('max', 575)
+      height: 300px
+      width: 100%
+  &__content
+    padding: 0 9rem
+    transition: .3s linear
+    box-sizing: border-box
+    +screen('max', 1600)
+      padding: 0 6rem
+    +screen('max', 1200)
+      padding: 0 2rem
+    +screen('max', 575)
+      padding: 5rem 3rem
+  &__pic
+    width: 100%
+    transition: .2s linear
+    height: 125%
+    object-fit: cover
+    object-position: right
+    +screen('max', 1023)
+      object-position: center
+  &__text
+    +fs(22px)
+    letter-spacing: 0.22px
+    line-height: 1.25
+    +screen('max', 1200)
+      +fs(16px)
+  &__title
+    +fs(32px)
+    color: 000
+    margin-bottom: 3rem
+    letter-spacing: 0.8px
+    font-family: $font
+    +screen('max', 1200)
+      +fs(20px)
+  .swiper-container
+    height: 100%
+.about-banner
+  text-align: center
+  padding: 10rem 0 0
+  +screen('max', 575)
+    padding: 10rem 5rem 0
+    box-sizing: border-box
+  &__icon
+    width: 45px
+    height: 45px
+    margin-bottom: 3rem
+  &__sign
+    display: block
+    margin: 0 auto
+    max-width: 530px
+    +fs(34px)
+    letter-spacing: 0.85px
+    color: #b39d62
+    font-weight: 400
+    font-family: $font
+    +screen('max', 575)
+      +fs(25px)
+  &__pic
+    width: 100%
+    vertical-align: middle
+    height: 600px
+    object-fit: cover
+    margin-top: 10rem
+    +screen('max', 575)
+      height: 300px
+  &__quote
+    margin-bottom: 10rem
+    +fs(15px)
+    color: #3c0f27
+    margin-top: 2rem
+    font-weight: 300

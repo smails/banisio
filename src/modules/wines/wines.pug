@@ -1,0 +1,91 @@
+mixin wines(state)
+  if state == 'slider'
+    +b.wines
+      +e.inner.inner
+        .swiper-container
+          .swiper-wrapper
+            +e.slide.swiper-slide
+              +e.IMG.pic(src='/images/wines-1.png' alt='')
+            +e.slide.swiper-slide
+              +e.IMG.pic(src='/images/wines-2.png' alt='')
+            +e.slide.swiper-slide
+              +e.IMG.pic(src='/images/wines-3.png' alt='')
+            +e.slide.swiper-slide
+              +e.IMG.pic(src='/images/wines-4.png' alt='')
+            +e.slide.swiper-slide
+              +e.IMG.pic(src='/images/wines-5.png' alt='')
+          .swiper-button-prev
+          .swiper-button-next
+  else if state == '1'
+    +b.wine-list
+      +e.inner.inner
+        +e.A.item(href="#")
+          +e.IMG.pic(src='/images/wines-1.png' alt='')
+          +e.P.name Banisio Crianza 2018
+          +b.more DETAILS
+            +e.SVG.i(height='512' viewBox='0 0 24 24' width='512' xmlns='http://www.w3.org/2000/svg')
+              path(d='M15.5 12.5H.5a.5.5 0 010-1h15a.5.5 0 010 1z')
+              path(d='M11.5 16.5a.5.5 0 01-.354-.853L14.793 12l-3.646-3.646a.5.5 0 01.707-.707l4 4a.5.5 0 010 .707l-4 4a.502.502 0 01-.354.146z')
+              path(d='M12 23a11.015 11.015 0 01-10.372-7.333.5.5 0 01.943-.333A10.013 10.013 0 0012 22c5.514 0 10-4.486 10-10S17.514 2 12 2a10.01 10.01 0 00-9.428 6.667.5.5 0 01-.943-.333A11.012 11.012 0 0112 1c6.065 0 11 4.935 11 11s-4.935 11-11 11z')
+        +e.item
+          +e.IMG.pic(src='/images/wines-2.png' alt='')
+          +e.P.name Banisio Red 2020
+          +b.A.more(href="#") DETAILS
+            +e.SVG.i(height='512' viewBox='0 0 24 24' width='512' xmlns='http://www.w3.org/2000/svg')
+              path(d='M15.5 12.5H.5a.5.5 0 010-1h15a.5.5 0 010 1z')
+              path(d='M11.5 16.5a.5.5 0 01-.354-.853L14.793 12l-3.646-3.646a.5.5 0 01.707-.707l4 4a.5.5 0 010 .707l-4 4a.502.502 0 01-.354.146z')
+              path(d='M12 23a11.015 11.015 0 01-10.372-7.333.5.5 0 01.943-.333A10.013 10.013 0 0012 22c5.514 0 10-4.486 10-10S17.514 2 12 2a10.01 10.01 0 00-9.428 6.667.5.5 0 01-.943-.333A11.012 11.012 0 0112 1c6.065 0 11 4.935 11 11s-4.935 11-11 11z')
+        +e.item
+          +e.IMG.pic(src='/images/wines-3.png' alt='')
+          +e.P.name Banisio Reserva 2016
+          +b.A.more(href="#") DETAILS
+            +e.SVG.i(height='512' viewBox='0 0 24 24' width='512' xmlns='http://www.w3.org/2000/svg')
+              path(d='M15.5 12.5H.5a.5.5 0 010-1h15a.5.5 0 010 1z')
+              path(d='M11.5 16.5a.5.5 0 01-.354-.853L14.793 12l-3.646-3.646a.5.5 0 01.707-.707l4 4a.5.5 0 010 .707l-4 4a.502.502 0 01-.354.146z')
+              path(d='M12 23a11.015 11.015 0 01-10.372-7.333.5.5 0 01.943-.333A10.013 10.013 0 0012 22c5.514 0 10-4.486 10-10S17.514 2 12 2a10.01 10.01 0 00-9.428 6.667.5.5 0 01-.943-.333A11.012 11.012 0 0112 1c6.065 0 11 4.935 11 11s-4.935 11-11 11z')
+  else if state == '2'
+    +b.wine-list
+      +e.inner.inner
+        +e.item
+          +e.IMG.pic(src='/images/wines-6.png' alt='')
+          +e.P.name Banisio Sauvignon Blanc 2020
+          +b.A.more(href="#") DETAILS
+            +e.SVG.i(height='512' viewBox='0 0 24 24' width='512' xmlns='http://www.w3.org/2000/svg')
+              path(d='M15.5 12.5H.5a.5.5 0 010-1h15a.5.5 0 010 1z')
+              path(d='M11.5 16.5a.5.5 0 01-.354-.853L14.793 12l-3.646-3.646a.5.5 0 01.707-.707l4 4a.5.5 0 010 .707l-4 4a.502.502 0 01-.354.146z')
+              path(d='M12 23a11.015 11.015 0 01-10.372-7.333.5.5 0 01.943-.333A10.013 10.013 0 0012 22c5.514 0 10-4.486 10-10S17.514 2 12 2a10.01 10.01 0 00-9.428 6.667.5.5 0 01-.943-.333A11.012 11.012 0 0112 1c6.065 0 11 4.935 11 11s-4.935 11-11 11z')
+        +e.item
+          +e.IMG.pic(src='/images/wines-7.png' alt='')
+          +e.P.name Banisio Verdejo 2020
+          +b.A.more(href="#") DETAILS
+            +e.SVG.i(height='512' viewBox='0 0 24 24' width='512' xmlns='http://www.w3.org/2000/svg')
+              path(d='M15.5 12.5H.5a.5.5 0 010-1h15a.5.5 0 010 1z')
+              path(d='M11.5 16.5a.5.5 0 01-.354-.853L14.793 12l-3.646-3.646a.5.5 0 01.707-.707l4 4a.5.5 0 010 .707l-4 4a.502.502 0 01-.354.146z')
+              path(d='M12 23a11.015 11.015 0 01-10.372-7.333.5.5 0 01.943-.333A10.013 10.013 0 0012 22c5.514 0 10-4.486 10-10S17.514 2 12 2a10.01 10.01 0 00-9.428 6.667.5.5 0 01-.943-.333A11.012 11.012 0 0112 1c6.065 0 11 4.935 11 11s-4.935 11-11 11z')
+  else if state == '3'
+    +b.wine-list
+      +e.inner.inner
+        +e.item
+          +e.IMG.pic(src='/images/wines-4.png' alt='')
+          +e.P.name Banisio Crianza 2016
+          +b.A.more(href="#") DETAILS
+            +e.SVG.i(height='512' viewBox='0 0 24 24' width='512' xmlns='http://www.w3.org/2000/svg')
+              path(d='M15.5 12.5H.5a.5.5 0 010-1h15a.5.5 0 010 1z')
+              path(d='M11.5 16.5a.5.5 0 01-.354-.853L14.793 12l-3.646-3.646a.5.5 0 01.707-.707l4 4a.5.5 0 010 .707l-4 4a.502.502 0 01-.354.146z')
+              path(d='M12 23a11.015 11.015 0 01-10.372-7.333.5.5 0 01.943-.333A10.013 10.013 0 0012 22c5.514 0 10-4.486 10-10S17.514 2 12 2a10.01 10.01 0 00-9.428 6.667.5.5 0 01-.943-.333A11.012 11.012 0 0112 1c6.065 0 11 4.935 11 11s-4.935 11-11 11z')
+        +e.item
+          +e.IMG.pic(src='/images/wines-5.png' alt='')
+          +e.P.name Banisio Reserva 2016
+          +b.A.more(href="#") DETAILS
+            +e.SVG.i(height='512' viewBox='0 0 24 24' width='512' xmlns='http://www.w3.org/2000/svg')
+              path(d='M15.5 12.5H.5a.5.5 0 010-1h15a.5.5 0 010 1z')
+              path(d='M11.5 16.5a.5.5 0 01-.354-.853L14.793 12l-3.646-3.646a.5.5 0 01.707-.707l4 4a.5.5 0 010 .707l-4 4a.502.502 0 01-.354.146z')
+              path(d='M12 23a11.015 11.015 0 01-10.372-7.333.5.5 0 01.943-.333A10.013 10.013 0 0012 22c5.514 0 10-4.486 10-10S17.514 2 12 2a10.01 10.01 0 00-9.428 6.667.5.5 0 01-.943-.333A11.012 11.012 0 0112 1c6.065 0 11 4.935 11 11s-4.935 11-11 11z')
+        +e.item
+          +e.IMG.pic(src='/images/wines-8.png' alt='')
+          +e.P.name Banisio Roble 2018
+          +b.A.more(href="#") DETAILS
+            +e.SVG.i(height='512' viewBox='0 0 24 24' width='512' xmlns='http://www.w3.org/2000/svg')
+              path(d='M15.5 12.5H.5a.5.5 0 010-1h15a.5.5 0 010 1z')
+              path(d='M11.5 16.5a.5.5 0 01-.354-.853L14.793 12l-3.646-3.646a.5.5 0 01.707-.707l4 4a.5.5 0 010 .707l-4 4a.502.502 0 01-.354.146z')
+              path(d='M12 23a11.015 11.015 0 01-10.372-7.333.5.5 0 01.943-.333A10.013 10.013 0 0012 22c5.514 0 10-4.486 10-10S17.514 2 12 2a10.01 10.01 0 00-9.428 6.667.5.5 0 01-.943-.333A11.012 11.012 0 0112 1c6.065 0 11 4.935 11 11s-4.935 11-11 11z')
